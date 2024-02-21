@@ -1,7 +1,9 @@
-# Welcome to my site
+# Welcome
 
-### This is fancy
+See the site map below for a list of guides, etc.
 
-This is written in markdown
+## Site Map
 
-Check out [this markdown page](?test)
+- [Series](?series)
+- [All Guides](?guides)
+
