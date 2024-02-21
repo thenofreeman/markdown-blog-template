@@ -18,13 +18,13 @@
 <p>But why <em>Hello, World!</em>?
 …</p>
 <p>Let&#39;s take a look at some examples in popular languages.</p>
-<h3 id="javascript">JavaScript</h3>
+<h2 id="javascript">JavaScript</h2>
 <p>In JavaScript, we call the <code>log</code> method attached to the <code>console</code> object with the argument <code>“Hello, World!”</code>.</p>
 <pre><code class="jsx"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello, World!"</span>);</code></pre>
-<h3 id="python">Python</h3>
+<h2 id="python">Python</h2>
 <p>With Python, it is as simple as a call to <code>print</code>  with your desired text.</p>
 <pre><code class="python">print(<span class="hljs-string">"Hello, World!"</span>)</code></pre>
-<h3 id="c">C++</h3>
+<h2 id="c">C++</h2>
 <p>As you’ll find with most programs, C++ will tend to have a bit more code to complete a similar task. A detailed explanation is given below.</p>
 <pre><code class="cpp">#include &lt;iostream&gt;
 
@@ -38,7 +38,7 @@ int main()
 <p>We then create a function for the entry point of our program—where it is that our program starts executing when we run it—called <code>main</code> . This function declaration for <code>main()</code>  takes no argument but has a return value of type integer that signifies a status code for our program to send back to the operating system after it has finished running. </p>
 <p>Next is the definition of <code>main()</code> —denoted by the opening and closing braces (<code>{ }</code> ). Within this block we pass the <code>cout</code>  object (that is within the <code>std</code>  namespace) the arguments <code>“Hello, World!”</code> and <code>endl</code> (so that proceeding text will be on a newline) via the <code>&lt;&lt;</code> input redirection operator. </p>
 <p>Lastly, we <code>return 0</code>  from the <code>main()</code> function, letting the operating system know the program has finish with no errors.</p>
-<h3 id="rust">Rust</h3>
+<h2 id="rust">Rust</h2>
 <p>Similarly with C++, Rust has a little more, albeit less than C++, ado with your first program.</p>
 <pre><code class="rust">fn main() {
     println!(<span class="hljs-string">"Hello, World!"</span>);
@@ -46,7 +46,7 @@ int main()
 <p>We create our program entry point and main function, <code>main()</code> , using the <code>fn</code> keyword. </p>
 <p>The next line is calls to <code>println</code>—for “print line”—with the desired parameter, here we use <code>Hello, World!</code>. </p>
 <p>It should be noted that, in Rust, the exclamation mark (<code>!</code>) embedded in the <code>println</code> tells us _.</p>
-<h3 id="bash">Bash?</h3>
+<h2 id="bash">Bash?</h2>
 <pre><code><span class="hljs-meta">#! /usr/bin/bash</span>
 
 echo <span class="hljs-string">"Hello, World!"</span></code></pre><p>Next, we’ll take a look at how you can begin running or executing your programs.</p>

@@ -15,7 +15,7 @@ But why *Hello, World!*?
 
 Let's take a look at some examples in popular languages.
 
-### JavaScript
+## JavaScript
 
 In JavaScript, we call the `log` method attached to the `console` object with the argument `“Hello, World!”`.
 
@@ -23,7 +23,7 @@ In JavaScript, we call the `log` method attached to the `console` object with th
 console.log("Hello, World!");
 ```
 
-### Python
+## Python
 
 With Python, it is as simple as a call to `print`  with your desired text.
 
@@ -31,7 +31,7 @@ With Python, it is as simple as a call to `print`  with your desired text.
 print("Hello, World!")
 ```
 
-### C++
+## C++
 
 As you’ll find with most programs, C++ will tend to have a bit more code to complete a similar task. A detailed explanation is given below.
 
@@ -54,7 +54,7 @@ Next is the definition of `main()` —denoted by the opening and closing braces 
 
 Lastly, we `return 0`  from the `main()` function, letting the operating system know the program has finish with no errors.
 
-### Rust
+## Rust
 
 Similarly with C++, Rust has a little more, albeit less than C++, ado with your first program.
 
@@ -70,7 +70,7 @@ The next line is calls to `println`—for “print line”—with the desired pa
 
 It should be noted that, in Rust, the exclamation mark (`!`) embedded in the `println` tells us _.
 
-### Bash?
+## Bash?
 
 ```
 #! /usr/bin/bash
