@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1, viewport-fit=cover">
+        <title>Computer Science</title>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <link href="assets/css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="computer-science">Computer Science</h1>
+<h1 id="preface">Preface</h1>
+<h1 id="table-of-contents">Table of Contents</h1>
+<p>[[TOC]]</p>
+<h1 id="introduction">Introduction</h1>
+<h2 id="what-this-book-is-about">What This Book Is About</h2>
+<h2 id="what-this-book-is-not-about">What This Book Is NOT About</h2>
+<h2 id="motivation">Motivation</h2>
+<h2 id="who-is-this-book-for">Who Is This Book For?</h2>
+<h2 id="how-to-read-this-book">How To Read This Book</h2>
+<h2 id="chapter-overview">Chapter Overview</h2>
+<h2 id="end-content">End Content</h2>
+<p>Following every section, you will find some combination of sub-sections titled Exercises, Projects and/or Research. These sections are to test yourself and interact with the material more deeply. They can be used as follows:</p>
+<h3 id="supplementary-matrial">Supplementary Matrial</h3>
+<h3 id="exercises">Exercises</h3>
+<p>Exercises: Like any textbook these are your traditional exercises or problem sets. They are labeled with varying difficulty and will generally have a well-defined answer or at least one that can be found by reading this book. Some exercises will take longer than others to complete, but an advanced student shouldn&#39;t find themselves spending too much time to come up with an adequate answer at least. Solutions* to exercises are listed on the book&#39;s website. (Not all solutions are definite, or the only possible answers.)</p>
+<h3 id="research">Research</h3>
+<p>Research: Questions in this section follow a similar pattern to &quot;Exercises&quot; except they are completely open-ended, and you are almost guaranteed not to be able to find an answer in this book (at least at that point in reading). This is your opportunity to practice a Computer Scientist&#39;s greatest skill: research. </p>
+<h3 id="projects">Projects</h3>
+<p>Projects: Longer and more in-depth than the exercises, Projects will generally take a reader a considerable amount of time to complete. They are generally left open-ended to let your imagination turn them into whatever you like, but some are labeled either solved or verifiable. Projects labeled solved have source code listed on the book&#39;s website, while verifiable projects mean you can upload your solution on the book&#39;s website to be tested for completeness.</p>
+<h2 id="notation">Notation</h2>
+<p><code>C-x</code> means <code>CONTROL+x</code>
+<code>M-x</code> means <code>ALT+x</code></p>
+<p>With commands and other _, things wrapped in:</p>
+<ul>
+<li>square brackets, <code>[...]</code>, are optional.</li>
+<li>chevrons, <code>&lt;...&gt;</code>, are required, but variable.</li>
+</ul>
+<p>All other text is meant to be verbatim, unless otherwise obvious (such as personalized strings).</p>
+<h1 id="introduction-to-computer-science">Introduction to Computer Science</h1>
+<h2 id="introduction-1">Introduction</h2>
+<h2 id="getting-started">Getting Started</h2>
+<h2 id="a-brief-history-of-computer-science">A Brief History of Computer Science</h2>
+<h2 id="the-field-of-computer-science">The Field of Computer Science</h2>
+<h1 id="basics-of-computing">Basics of Computing</h1>
+<h2 id="introduction-2">Introduction</h2>
+<h2 id="number-systems">Number Systems</h2>
+<h3 id="introduction-3">Introduction</h3>
+<p>To differentiate numbers of different system, we will often prefix them as you will encounter in the next few guides.</p>
+<h3 id="decimal">Decimal</h3>
+<p>Decimal - base 10 - rarely comes with a prefix.</p>
+<h3 id="binary">Binary</h3>
+<p><code>0b</code></p>
+<h3 id="hexadecimal">Hexadecimal</h3>
+<p><code>0x</code></p>
+<h3 id="base-conversions">Base Conversions</h3>
+<h3 id="exercises-1">Exercises</h3>
+<ol>
+<li>Express the decimal number 245 in Binary, and Hexadecimal.</li>
+<li>Another common number system is Octal -- base 8. Convert the following decimal numbers to Octal. Use the prefix <code>0o</code>:<ul>
+<li>4</li>
+<li>9</li>
+<li>256</li>
+<li>2027</li>
+</ul>
+</li>
+</ol>
+<h3 id="research-1">Research</h3>
+<ol>
+<li>Find another number system apart from the ones mentioned in this section and try to answer the following questions: <ul>
+<li>What characters are used to represent its values? </li>
+<li>What are the use cases for it? </li>
+</ul>
+</li>
+<li>As explained, most of the common number systems have indicators to distinguish them from numbers of other systems, how is Octal represented in this manner?</li>
+</ol>
+<h1 id="introduction-to-computer-programming">Introduction to Computer Programming</h1>
+<h2 id="introduction-4">Introduction</h2>
+<h2 id="programming-basics">Programming Basics</h2>
+<h3 id="introduction-5">Introduction</h3>
+<p>languages used</p>
+<ul>
+<li>introduce a wide variety of languages and syntax, but most embedded examples will rely on C/C++ (which is taught fully in the next guide) for consistency and, because of how explicit their code is, they provide a deeper understanding than many other languages such as Python or JavaScript might. That is not to say it is a better language because of that -- in some ways this can be a hinderance, for example when speed and quick readability of code is paramount.</li>
+</ul>
+<p>notation
+faq</p>
+<h4 id="what-is-programming">What is Programming?</h4>
+<h4 id="why-learn-programming">Why Learn Programming?</h4>
+<h3 id="hello-world">Hello, World!</h3>
+<p>Hello, World!</p>
+<p>Before you start writing any complicated programs, you&#39;ll need to get a simple program to work first. Let&#39;s take a look at this first program: <em>Hello, World!</em> and see a few examples in popular languages.</p>
+<p>A “Hello, world” program is any simple program that you can use to test uf your programming environment is working properly. It can be anything you like, but the convention is to just print something like “Hello, World!” to the screen.</p>
+<p><em>Hello, World!</em> programs are simple enough, yet robust enough to show whether everything is in working order by giving you some output to inspect.</p>
+<p>In addition to testing your environment, <em>Hello, World!</em> programs are a great first program for people new to a particular language—or programming in general.</p>
+<p>But why <em>Hello, World!</em>?</p>
+<p>Its use dates back to the mid 70&#39;s (perhaps earlier) with the advent of the C programming language. “Hello, world” was used as an example in Brian Kernighan&#39;s <a href="https://www.bell-labs.com/usr/dmr/www/ctut.pdf">Programming in C: A Tutorial</a>, and the popularity of his and Dennis Ritchie&#39;s The C Programming Language made it so Hello, World! seen as standard by millions of programmers.</p>
+<h4 id="examples">Examples</h4>
+<p>Let&#39;s take a look at some examples in popular languages. Read through the explanations, but don&#39;t expect to understand everything. As you progress through these courses all of this will reveal itself to you.</p>
+<h5 id="c">C++</h5>
+<p>As you&#39;ll find with most programs, C++ will tend to have a bit more code to complete a similar task. A detailed explanation is given below.</p>
+<pre><code class="cpp">#include &lt;iostream&gt;
+
+int main()
+{
+    std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+    return 0;
+}</code></pre>
+<p>We first need to tell the preprocessor to paste in the contents of the file <code>iostream</code>, which contains declarations for input and output functionality—i.e. printing to the console.</p>
+<p>We then create a function for the entry point of our program—where it is that our program starts executing when we run it—called <code>main</code>. This function declaration for <code>main()</code> takes no argument but has a return value of type integer that signifies a status code for our program to send back to the operating system after it has finished running.</p>
+<p>Next is the definition of <code>main()</code> —denoted by the opening and closing braces (<code>{ }</code>). Within this block we pass the <code>cout</code> object (that is within the <code>std</code> namespace) the arguments <code>“Hello, World!”</code> and <code>endl</code> (so that proceeding text will be on a newline) via the <code>&lt;&lt;</code> input redirection operator.</p>
+<p>Lastly, we <code>return 0</code> from the <code>main()</code> function, letting the operating system know the program has finish with no errors.</p>
+<h5 id="javascript">JavaScript</h5>
+<p>In JavaScript, we call the <code>log</code> method attached to the <code>console</code> object with the argument <code>“Hello, World!”</code>.</p>
+<pre><code class="jsx"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello, World!"</span>);</code></pre>
+<h5 id="python">Python</h5>
+<p>With Python, it is as simple as a call to <code>print</code> with your desired text.</p>
+<pre><code class="python">print(<span class="hljs-string">"Hello, World!"</span>)</code></pre>
+<h4 id="more-examples">More Examples</h4>
+<p>In this section, just take a glance at each individual code. Don&#39;t worry about the specifics, as its far too much to think about so early in your journey as a programmer. Just note some differences you see, and remember the goal: Print/output <code>Hello, World!</code>.</p>
+<h5 id="racket">Racket</h5>
+<h5 id="prolog">Prolog</h5>
+<h5 id="bash">Bash</h5>
+<h5 id="java">Java</h5>
+<pre><code class="java">public <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloWorld</span> </span>{
+    public <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> main(string[] args) { 
+        System.out.println(<span class="hljs-string">"Hello, World!"</span>);
+    }
+}</code></pre>
+<h5 id="c-1">C</h5>
+<pre><code class="c">#include <span class="hljs-tag">&lt;<span class="hljs-name">stdio.h</span>&gt;</span>
+
+int main()
+{
+    printf("Hello, World!\n");
+}</code></pre>
+<h5 id="lua">Lua</h5>
+<pre><code class="lua">print(<span class="hljs-string">"Hello, World!"</span>)</code></pre>
+<h5 id="fortran">Fortran</h5>
+<h5 id="go">Go</h5>
+<pre><code class="go">package main
+<span class="hljs-keyword">import</span> <span class="hljs-string">"fmt"</span>
+
+func main() {
+    fmt.Println(<span class="hljs-string">"Hello, World!"</span>)
+}</code></pre>
+<h4 id="supplementary-material">Supplementary Material</h4>
+<h4 id="exercises-2">Exercises</h4>
+<ol>
+<li>You&#39;ve seen how to write a Hello, World! program in 3 programming languages, how about a 4th? Find another language, and research and type the code for that language.</li>
+<li>Pick one of the languages above and rewrite <strong>from memory</strong> the program for Hello, World. This might not be easy; do your best to have something before referencing the given code.</li>
+<li>Get at least one of these programs up and running. See the previous section on <a href="#writing-and-running-programs">Running Programs</a> if you are having troubles.</li>
+<li>In your desired language, change the phrase “Hello, World!” to something else. For example, “Greetings, Earth!” or “This program works!”</li>
+<li>Explain, in your own words—to the best of your ability—the intent of each line, each word and each character of one of the Hello, World! programs look at. Be thourough!</li>
+</ol>
+<h4 id="resources">Resources</h4>
+<h3 id="writing-and-running-programs">Writing and Running Programs</h3>
+<h3 id="types-of-languages">Types of Languages</h3>
+<p>imperative
+functional
+logical</p>
+<p>compiled
+interpreted
+vm</p>
+<p>weak vs strong typed
+...</p>
+<h3 id="variables-and-data-types">Variables and Data Types</h3>
+<p>Variables</p>
+<p>Literals</p>
+<p>Data Types</p>
+<p>Integers</p>
+<pre><code class="c++"><span class="hljs-type">int</span> myAge = <span class="hljs-number">72</span>;</code></pre>
+<p>Floating Point Values</p>
+<pre><code class="c++"><span class="hljs-type">double</span> pi = <span class="hljs-number">3.14159</span>;</code></pre>
+<p>Boolean</p>
+<pre><code class="c++"><span class="hljs-type">bool</span> learning = <span class="hljs-literal">true</span>;</code></pre>
+<p>Characters</p>
+<pre><code class="c++">char letter = <span class="hljs-string">'N'</span>;</code></pre>
+<p>Strings</p>
+<pre><code class="c++">std::string sentence = <span class="hljs-string">"A star-ing of characters."</span>;</code></pre>
+<p>Arrays</p>
+<pre><code class="c++"><span class="hljs-type">int</span> numbers[] = { <span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">15</span>, <span class="hljs-number">16</span>, <span class="hljs-number">23</span>, <span class="hljs-number">42</span> };</code></pre>
+<p>User-Defined Types</p>
+<p>User-defined types let you build types of your own, mixing and matching logic involving exisiting types (such as above), to simplify details or bundle data together.</p>
+<p>The usage of a User-Defined type might look something like this, where MyType is a type you would have to create yourself.</p>
+<pre><code class="cpp">MyType something;</code></pre>
+<p>User defined types are explained in detail in <a href="#classes-and-objects">Classes and Objects</a>.</p>
+<p>literals
+default initialization
+constants: const / final
+inferred types vs explicit types
+different widths</p>
+<h3 id="operators">Operators</h3>
+<h4 id="exercises-3">Exercises</h4>
+<ol>
+<li>You&#39;ve just now learned about data types and operators, and in <a href="#hello-world">Hello, World!</a> were introduced to how to print something to the screen. Combine these skills to print the result of some arithmetic operations.</li>
+</ol>
+<h3 id="blocks-statements-and-expressions">Blocks, Statements and Expressions</h3>
+<p>Scope</p>
+<h3 id="conditional-logic">Conditional Logic</h3>
+<p>if
+if else
+else</p>
+<p>switch</p>
+<h3 id="loops">Loops</h3>
+<p>while 
+do while</p>
+<p>for
+for each</p>
+<h3 id="functions">Functions</h3>
+<h3 id="classes-and-objects">Classes and Objects</h3>
+<p>class
+struct / record</p>
+<h3 id="coding-style">Coding Style</h3>
+<p>c style? lisp style? pythonic?</p>
+<p>A Word On Jump Statements (break, continue, goto, return, jump, ...)</p>
+<p>Conventions</p>
+<ul>
+<li>whitespace</li>
+<li>nesting</li>
+<li>character case</li>
+</ul>
+<p>Case of variables and types</p>
+<ul>
+<li>camel case</li>
+<li>pascal case</li>
+<li>snake case</li>
+<li>kebab case</li>
+<li>const case</li>
+<li>c case</li>
+</ul>
+<p>Paradigms</p>
+<h3 id="section-review">Section Review</h3>
+<h4 id="research-2">Research</h4>
+<ol>
+<li><p>Find a new language and create the equivalent of a &quot;Hello, World&quot; program in that language. Then, answer some of the following questions:</p>
+<ul>
+<li><p>What style does this language use?</p>
+</li>
+<li><p>What are the benefits of using this language over the ones learned previously?</p>
+</li>
+<li><p>For what purpose was this language developed?</p>
+<p>A few unconventional languages to consider:</p>
+</li>
+<li><p>common lisp</p>
+</li>
+<li><p>vimscript</p>
+</li>
+<li><p>prolog</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="foundational-c">Foundational C++</h2>
+<h3 id="introduction-6">Introduction</h3>
+<p>At this point you should have a general understanding of basic programming concepts and be exposed to some syntax. This guide will serves as a quick review of these concepts by demonstrating how C++ specifically does things, and aims to give students a strong programming foundation for them to move on to other languages or excel further in C/C++.</p>
+<p>As introduced in programming basics we will be - temporarily - using Microsoft&#39;s <em>Visual Studio Code</em> and its embedded terminal to write and run our programs.</p>
+<h3 id="deconstructed-hello-world">Deconstructed &quot;Hello, World!&quot;</h3>
+<p>If You went through the [introductory series on programming], this <del>Hello, World!</del> program might look familiar to you. But though it&#39;s familiar, it still might not make much sense beyond what the output should be. Let&#39;s spend a few minutes deconstructing what we see.</p>
+<pre><code class="cpp">#include &lt;iostream&gt;
+
+int main()
+{
+    std::cout &lt;&lt; "Hello, World!" &lt;&lt; '\n';
+
+    return 0;
+}</code></pre>
+<pre><code class="cpp"><span class="hljs-selector-id">#include</span> &lt;<span class="hljs-selector-tag">iostream</span>&gt;</code></pre>
+<p>We open the first line with a =#include= (read as &quot;hash-include&quot;) of the =iostream= header file.</p>
+<p>The hash denotes a preprocessor directive. That is, these lines are run before the compiler compiles your code. The =include= literally means <del>paste the contents of file x into this file</del>. So, on this line we are pasting the all contents of the =iostream= file into this file when we compile our code.</p>
+<p>The angle brackets say where the file is located for the preprocessor to look first for your file. For now, just think of =&lt;...&gt;= as for system libraries, when defining your own use =&quot;...&quot;=.</p>
+<pre><code class="cpp"><span class="hljs-selector-id">#include</span> "<span class="hljs-selector-tag">MyFile</span><span class="hljs-selector-class">.h</span>"</code></pre>
+<p>Header files are just normal files but they contain all bits of code to say &quot;this code exists in another file that I&#39;ve defined somewhere else&quot;. This will be explained in detail soon, but essentially this is done so that C++ knows our functions or classes (etc.) exist, but we can define them somewhere else so that we aren&#39;t pasting all of their contents here, just their /names/.</p>
+<p>The =iostream= header file is a /standard library/ header file that contains all the useful declarations for working with input and output streams (hence the =io= and =stream=).</p>
+<p>Moving on to line 3 we have our =main= function.</p>
+<pre><code class="cpp"><span class="hljs-type">int</span> main()</code></pre>
+<p>This is the standard starting point of your program; when you run your program, it will begin executing line-by-line starting here. =int= denotes the return type where =return 0= on line 7 means executed successfully - without error.</p>
+<p>This next couple of lines do all the fun stuff.</p>
+<pre><code class="cpp">std::cout &lt;&lt; <span class="hljs-string">"Hello, World!"</span> &lt;&lt; <span class="hljs-string">'\n'</span>;</code></pre>
+<p>We open up our function block on line 4 with ={ ... }= and pass the desired output text to the =cout= object defined in the =std=, standard library, namespace.</p>
+<p>(Namespace are essentially tools to define named scopes so you can differentiate between multiple resources that might have the same name, and are discussed in detail later on)</p>
+<p>=cout= allows you to put text to the console. It, and its counterpart =cin= will be used extensively in your early programs.</p>
+<p>Lastly, =&lt;&lt;= is defined as the /stream insertion operator/ which is really just a fancy function call to pass text to =cout=.</p>
+<p>Notice how strings of characters are defined in double quotes (=&quot;= ) and single characters are wrapped in single quotes (=&#39;=), like the escaped newline character, =\n=.</p>
+<p>Lastly, always remember to end your statements in C++ with a semicolon (=;=), and you now understand everything you need to begin writing effective programs.</p>
+<p>Try playing around with this starter file to get it to print various string of text, on multiple lines.</p>
+<h3 id="overview-of-syntax">Overview of Syntax</h3>
+<h3 id="compiling-with-gcc">Compiling with gcc</h3>
+<h3 id="multi-file-programs">Multi-File Programs</h3>
+<h3 id="working-with-libraries">Working with Libraries</h3>
+<h1 id="the-developer-environment">The Developer Environment</h1>
+<h2 id="introduction-7">Introduction</h2>
+<p>We now transition to learning a set of fundamental tools for developers and computer scientists.</p>
+<p>Many of the utilities learned here may seem overly complex or outdated. In some cases this may be true. Still, they are utilitized heavily in the real world, and because of their complexity, it will make learning simpler tools all the more simple for you in the future, with the added benefit of gaining an understanding of how you might accomplish more intensive tasks if you need to.</p>
+<p>Our first two sections, gcc and the command line, we&#39;ve already encountered in our foundational guide to C/C++. In those sections we will expand on this learning, providing you with the skills to do anything beyond just running memorized commands.</p>
+<h2 id="the-command-line">The Command Line</h2>
+<h2 id="development-tools">Development Tools</h2>
+<h3 id="introduction-8">Introduction</h3>
+<h3 id="logging-and-debugging">Logging and Debugging</h3>
+<ul>
+<li>Print-Line Debugging</li>
+<li>Debuggin with gdb</li>
+<li>Logging</li>
+</ul>
+<h3 id="formatting-and-analyzing-code">Formatting and Analyzing Code</h3>
+<h3 id="version-control-with-git">Version Control with Git</h3>
+<h4 id="introduction-9">Introduction</h4>
+<h4 id="what-is-git">What is Git?</h4>
+<h4 id="why-use-git">Why Use Git?</h4>
+<h4 id="installing-git">Installing Git</h4>
+<h4 id="core-concepts">Core Concepts</h4>
+<ul>
+<li>Git vs GitHub</li>
+<li>working directory</li>
+<li>staging area</li>
+<li>remote</li>
+</ul>
+<h4 id="common-workflows">Common Workflows</h4>
+<h5 id="starting-a-new-project">Starting a New Project</h5>
+<h5 id="working-with-existing-code">Working With Existing Code</h5>
+<h5 id="cloning-someone-elses-project">Cloning Someone Else&#39;s Project</h5>
+<h4 id="working-with-remotes">Working With Remotes</h4>
+<ul>
+<li>Cloning</li>
+<li>Access and SSH</li>
+<li>Fetching Changes</li>
+<li>Pulling Changes</li>
+<li>Pushing Changes</li>
+</ul>
+<h4 id="branches">Branches</h4>
+<h4 id="supplementary-material-1">Supplementary Material</h4>
+<ul>
+<li>Pro Git</li>
+</ul>
+<h3 id="documenting-with-markdown">Documenting with Markdown</h3>
+<h3 id="building-projects-with-make-and-cmake">Building Projects with Make and CMake</h3>
+<h2 id="editors-and-ides">Editors and IDEs</h2>
+<h3 id="introduction-10">Introduction</h3>
+<h3 id="overview-of-options">Overview of Options</h3>
+<h4 id="vs-code">VS Code</h4>
+<p>Beloved by Web Developers and hobbyist alike, VSCode is a top 3 editor of mine. It is very simple and light to download but is infinitely extensible with Extensions from 3rd party creators. However, this is both a blessing and a curse; because of this you can configure it to do just about anything but with many languages you might have trouble with the initial configuration since it is essentially not far off from a fancy Notepad or TextEdit without extensions.</p>
+<h4 id="visual-studio">Visual Studio</h4>
+<h4 id="jetbrains-ide-suite">Jetbrains IDE Suite</h4>
+<p>You&#39;ll see their products listed frequently below; JetBrains makes a lot of really great products that work as they should out of the box. However, each tool is very narrow to a particular language and seasoned programmers often say they prefer alternatives. But with that being said, they are excellent for beginners (really the only IDEs I would comfortably recommend to people just starting out), have a ton of functionality you don&#39;t get with a plain editor, and if and when you decide to try another language, they have a large suite of editors that work well with other languages.</p>
+<h4 id="vim">Vim</h4>
+<p>It&#39;s not an easy feat, but if you dare, Vim is one of the most incredible tools you will ever utilize as a programmer. It is not just a text editor but a productivity tool and _. Even when I&#39;m not using Vim itself, I have configured all of my editors to emulate its command mode. Interestingly enough, if you&#39;re on MacOS or Linux, theres a good chance the command line version is installed on your system already. For more info about Vim see the [official Vim website] or my [complete guide to Vim for beginners].</p>
+<h4 id="emacs">Emacs</h4>
+<p>Another excellent choice but, again, another difficult one to start with. Like Vim, Emacs is an exceptional editor and much like VSCode it is infinitely extensible; but even more so. These guides themselves were, for the most part, all written in Emacs. A more gentle introduction might be a distribution such as [Doom Emacs] or [Spacemacs], but even then you&#39;ll be spending more time figuring out your editor instead of learning to program.</p>
+<h4 id="others">Others</h4>
+<ul>
+<li>Apple XCode</li>
+<li>IDLE for Python</li>
+</ul>
+<h3 id="visual-studio-code">Visual Studio Code</h3>
+<h3 id="visual-studio-1">Visual Studio</h3>
+<h3 id="jetbrains-ide-suite-1">Jetbrains IDE Suite</h3>
+<h3 id="vim-1">Vim</h3>
+<h4 id="introduction-11">Introduction</h4>
+<h5 id="what-is-vim">What Is Vim?</h5>
+<p>Vim is a powerful text editor and key binding set for working with text files. It has been around since the 1970s and is widely used by developers and hobbyist to date.</p>
+<h5 id="why-use-vim">Why Use Vim?</h5>
+<ul>
+<li>Speed and Efficiency</li>
+<li>Reduced RSI</li>
+<li>Powerful Tool-set</li>
+<li>Vim can be emulated in just about every editor, whether via a plugin or built-in feature, so you can take your skills wherever they lead you.</li>
+</ul>
+<p>Essentially, if there is some task you wish to do within a file: Vim can do it, and likely more efficiently than other editors or tools available.</p>
+<h5 id="how-to-get-vim">How to Get Vim</h5>
+<ul>
+<li>Vim</li>
+<li>In Your Favorite editor (VS Code, Jetbrains)</li>
+<li>NeoVim</li>
+<li>In Emacs</li>
+</ul>
+<h5 id="how-to-learn-vim">How to Learn Vim</h5>
+<ul>
+<li>There is never one way to do a thing.</li>
+<li>Memorize with your muscles, not your brain. That is: practice. When writing this guide, it was hard to think of commands to talk about because I didn&#39;t consciously remember which they were: I just use them automatically. When you learn a new skill use it, don&#39;t memorize it, and soon Vim commands will be as natural as using the keyboard.</li>
+</ul>
+<h4 id="fundamental-concepts">Fundamental Concepts</h4>
+<h5 id="touch-typing">Touch Typing</h5>
+<p>Touch typing isn&#39;t a requirement to learn Vim, but it will certainly make things easier.</p>
+<h5 id="modes">Modes</h5>
+<ul>
+<li>NORMAL</li>
+<li>INSERT</li>
+<li>VISUAL</li>
+<li>EX (Command Mode)</li>
+<li>More</li>
+</ul>
+<h5 id="commands">Commands</h5>
+<h5 id="combining-commands">Combining Commands</h5>
+<h4 id="getting-started-1">Getting Started</h4>
+<p>From the command line run: <code>vim [filename]</code>, or open the app on your desktop, if it exists.</p>
+<p>After making changes, you can save and quit by typing <code>:wq</code> followed by the ENTER key. To save without quitting use just <code>:w</code>, or to quit without saving type <code>:q</code>. If you are unable to quit because you have unsaved changes that you don&#39;t want to save, use <code>:q!</code> to quit and discard those changes.</p>
+<h4 id="buffers-windows-and-screens">Buffers, Windows, and Screens</h4>
+<h4 id="moving-around">Moving Around</h4>
+<h5 id="by-characters">By Characters</h5>
+<p>Move your cursor with <code>h</code>, <code>j</code>, <code>k</code>, <code>l</code>. They correspond with movement to the LEFT, DOWN, UP, and RIGHT, respectively. This is the hardest but most crucial command-set to learning Vim. Spend a good amount of time here before moving on.</p>
+<p>Notice how when you cross vertically over a shorter line (between two longer lines) that Vim remembers the horizontal position you were at before moving.</p>
+<h5 id="by-words">By Words</h5>
+<p>Move around by words (groups of characters) with <code>w</code>, <code>b</code>, <code>e</code>. </p>
+<ul>
+<li><code>w</code> moves the cursor forward by the beginning of words, </li>
+<li><code>b</code> moves the cursor backwards by the beginning of words, and </li>
+<li><code>e</code> moves forward by the end of words. </li>
+</ul>
+<p>Each of these commands have a capital-case counter-part (<code>W</code>, <code>B</code>, <code>E</code>) that essentially do the same command except they are strictly whitespace delimited.</p>
+<h5 id="within-a-line">Within a Line</h5>
+<p>Within a line, you can jump to the beginning or end of it with <code>0</code> and <code>$</code>, respectively. Alternatively, if you want to go to the first non-whitespace character in the line, use <code>^</code> instead of <code>0</code>.</p>
+<h5 id="within-the-file">Within the File</h5>
+<p>You can quickly jump to the top or the bottom of a file:</p>
+<ul>
+<li><code>gg</code> to go to the top, and</li>
+<li><code>G</code> to jump to the bottom.</li>
+</ul>
+<p><code>C-f</code> and <code>C-b</code> allow you to move forward and backward in the file by a full screen height. Also, <code>C-d</code> and <code>C-u</code> are useful, moving up or down by a half screen height.</p>
+<h4 id="editing-text">Editing Text</h4>
+<p>So we can move around, but what use is an editor without editing. To begin typing text we have to enter <code>INSERT</code> mode.</p>
+<h5 id="entering-insert-mode">Entering Insert Mode</h5>
+<p><code>i</code> and <code>a</code>, and their counterparts <code>I</code> and <code>A</code>, put your cursor into <code>INSERT</code>.</p>
+<ul>
+<li><code>i</code> before the cursor,</li>
+<li><code>a</code> after the cursor,</li>
+<li><code>I</code> at the beginning of the line (ie. <code>^i</code>), and </li>
+<li><code>A</code> at the end of the line.</li>
+</ul>
+<p>Also, <code>o</code> and <code>O</code> are useful for entering <code>INSERT</code> mode by opening a new line below or above the current line.</p>
+<h5 id="changing-and-deleting">Changing and Deleting</h5>
+<p>Commands like <code>dd</code> delete the complete current line; <code>C</code> deletes the current line AFTER the cursor and enters insert mode.</p>
+<h4 id="selecting-text">Selecting Text</h4>
+<h4 id="other-common-tasks">Other Common Tasks</h4>
+<h5 id="yank-and-paste">Yank and Paste</h5>
+<h5 id="undo-redo-and-repeat">Undo-Redo and Repeat</h5>
+<h4 id="searching-find-and-replace">Searching, Find, and Replace</h4>
+<ul>
+<li><code>/query</code> <code>n</code> <code>N</code></li>
+<li><code>f</code> <code>t</code> <code>;</code> <code>,</code> and uppercase version</li>
+<li><code>%s/old/new/</code></li>
+<li><code>%s/old/new/g</code></li>
+<li><code>&#39;&lt;,&#39;&gt;/old/new/</code> replace in a selected range</li>
+</ul>
+<p>escape <code>/</code>s with <code>\</code>.</p>
+<h4 id="honerable-mentions">Honerable Mentions</h4>
+<ul>
+<li>More Movements and Edits</li>
+<li>Multiple Files</li>
+<li>Multiple Windows</li>
+<li>Macros</li>
+<li>Folds</li>
+<li>Plugins</li>
+</ul>
+<h4 id="wrapping-up">Wrapping Up</h4>
+<p>See the cheatsheet in <a href="#supplementary-material-1">More Resources</a> for a full list of available commands. But note: what you can do with Vim far extends the commands listed in the list below, it is the way in which you combine them, extend them, and introduce plug-ins that truly make Vim an every-thing tool.</p>
+<p>If still have a taste for what Vim can offer, follow up with some of the supplementary material and look forward to a complete guide to vim coming soon.</p>
+<h4 id="supplementary-material-2">Supplementary Material</h4>
+<ul>
+<li>Cheatsheet</li>
+<li>vimtutor</li>
+<li>Vi iMproved by Steve Oualine</li>
+<li>Mastering Vim Quickly by Jovica Ilic</li>
+</ul>
+<h4 id="exercises-4">Exercises</h4>
+<h3 id="emacs-1">Emacs</h3>
+<h1 id="programming-paradigms">Programming Paradigms</h1>
+<h2 id="introduction-12">Introduction</h2>
+<p>We&#39;ve learned a great deal of programming thus far. Most of our time, however, has been spent in a very narrow (albeit most common) subset of programming called Imperative Programming. This series aims to educate readers in the various other forms of programming that exist. At the very least, you will come away with new - sometimes better - ways to think about computational problems. At most you will discover a style of programming that you prefer, and can further your journey more directed down that pathway.</p>
+<p>... which unfortunetly might mean un-learning some of what we just did momentarily. So make sure you&#39;re confident with the core concepts explained earlier to ensure that it isn&#39;t lost away.</p>
+<p>What this courses does not cover, as many paradigms courses do, is a discussion of language implementation, syntax, design, etc. These concepts will be left to a more complete instruction, on Language and Compiler Design.</p>
+<h2 id="imperative-programming">Imperative Programming</h2>
+<h3 id="introduction-to-imperative-programming">Introduction to Imperative Programming</h3>
+<h3 id="procedural-programming-in-algol">Procedural Programming in ALGOL</h3>
+<h3 id="object-oriented-programming-in-java">Object Oriented Programming in Java</h3>
+<h3 id="structured-programming-in-c">Structured Programming in C</h3>
+<h3 id="unstructured-programming-in-assembly">Unstructured Programming in Assembly</h3>
+<h3 id="scientific-programming-in-fortran">Scientific Programming in Fortran</h3>
+<h2 id="declarative-programming">Declarative Programming</h2>
+<h3 id="introduction-to-declarative-programming">Introduction to Declarative Programming</h3>
+<h3 id="functional-programming-in-racket">Functional Programming in Racket</h3>
+<h4 id="exercies">Exercies</h4>
+<p>Write a procedure <code>rotate-right</code> that emulates the behavior of the built-in <code>rotate</code> function.</p>
+<h3 id="logical-programming-in-prolog">Logical Programming in Prolog</h3>
+<h3 id="markup-programming-in-htmlcss">Markup Programming in HTML+CSS</h3>
+<h3 id="database-programming-in-sql">Database Programming in SQL</h3>
+<h2 id="other-styles">Other Styles</h2>
+<ul>
+<li>Python</li>
+<li>Web Scripting in JavaScript</li>
+<li>Shell Scripting in Bash</li>
+<li>Configuration in Lua</li>
+<li>Metaprogramming</li>
+<li>Component-Based Development in React</li>
+<li>Integrated-UI Development in Swift</li>
+<li>Metaprogramming</li>
+</ul>
+<h2 id="section-review-1">Section Review</h2>
+<h1 id="data-structures-and-algorithms">Data Structures and Algorithms</h1>
+<h1 id="software-engineering">Software Engineering</h1>
+<ul>
+<li>Design Patterns</li>
+</ul>
+<p>Clean Code?
+Design Patterns</p>
+<p>While Software Engineering deals quite a bit with Project Mananagement, a fuller discussion of this is delegated to the gude on Projects and Employment.</p>
+<h1 id="systems-programming-in-c">Systems Programming in C</h1>
+<ul>
+<li>Shell Scripting in Bash</li>
+<li>Processes and Threads</li>
+</ul>
+<h1 id="language-and-compiler-design">Language and Compiler Design</h1>
+<h1 id="projects-and-employment">Projects and Employment</h1>
+<p>Project Management</p>
+<ul>
+<li>Starting a Project</li>
+<li>Managing a Project</li>
+<li>Maintaining a Project</li>
+<li>Packaging a Project</li>
+<li>Releasing a Project</li>
+</ul>
+<p>Open Source</p>
+<ul>
+<li>Finding a Project</li>
+<li>Contributing to a Project</li>
+</ul>
+<p>Work</p>
+<ul>
+<li>Finding a Job</li>
+<li>Building a Resume</li>
+<li>Building a Portfolio</li>
+<li>Marketing Yourself</li>
+<li>On-the-Job Skills</li>
+<li>Professional Communication</li>
+</ul>
+<p>Startups</p>
+<h1 id="appendix">Appendix</h1>
+<h2 id="appendix-a---symbols">Appendix A - Symbols</h2>
+<h3 id="greek-alphabet">Greek Alphabet</h3>
+<h3 id="mathematical-symbols">Mathematical Symbols</h3>
+<h2 id="appendix-b---a-big-list-of-projects">Appendix B - A Big List of Projects</h2>
+<h2 id="appendix-c---a-bigger-list-of-resources">Appendix C - A Bigger List of Resources</h2>
+<p>** General
+*** Marketplaces</p>
+<ul>
+<li>Udemy</li>
+<li>EdX</li>
+<li>MIT OCW</li>
+<li>Khan Academy</li>
+<li>Coursera</li>
+<li>Udacity</li>
+<li>Brilliant</li>
+<li><ul>
+<li>Study Tools</li>
+</ul>
+</li>
+<li>Anki</li>
+<li><ul>
+<li>Typing</li>
+</ul>
+</li>
+<li>[[<a href="https://monkeytype.com/%5D%5BMonkeyType%5D%5D">https://monkeytype.com/][MonkeyType]]</a></li>
+<li>[[<a href="https://speedcoder.net/%5D%5BSpeedCoder%5D%5D">https://speedcoder.net/][SpeedCoder]]</a></li>
+<li>[[<a href="https://keybr.com/%5D%5BKeyBr%5D%5D">https://keybr.com/][KeyBr]]</a></li>
+<li>[[<a href="https://ratatype.com/%5D%5BRataType%5D%5D">https://ratatype.com/][RataType]]</a></li>
+<li><ul>
+<li>Design</li>
+</ul>
+</li>
+<li>** Colors</li>
+<li>[[<a href="https://coolors.co/generate%5D%5BCoolors%5D%5D">https://coolors.co/generate][Coolors]]</a></li>
+<li>[[<a href="https://colorhunt.co/%5D%5BColor">https://colorhunt.co/][Color</a> Hunt]]</li>
+<li>[[<a href="https://paletton.com/%5D%5BPaletton%5D%5D">https://paletton.com/][Paletton]]</a></li>
+<li>[[<a href="https://www.degraeve.com/color-palette/%5D%5BDegrave">https://www.degraeve.com/color-palette/][Degrave</a> Palatte Generator]]</li>
+<li>[[<a href="http://colormind.io/%5D%5BColor">http://colormind.io/][Color</a> Mind]]</li>
+<li>[[<a href="https://uigradients.com/%5D%5BUI">https://uigradients.com/][UI</a> Gradients]]</li>
+<li>[[<a href="https://color.adobe.com/create/color-wheel%5D%5BAdobe">https://color.adobe.com/create/color-wheel][Adobe</a> Color]]</li>
+<li>[[<a href="https://flatuicolors.com/%5D%5BFlat">https://flatuicolors.com/][Flat</a> UI Colors]]</li>
+<li>** Mockup</li>
+<li>[[<a href="https://www.sketch.com/%5D%5BSketch%5D%5D">https://www.sketch.com/][Sketch]]</a></li>
+<li>[[<a href="https://www.adobe.com/products/xd.html%5D%5BAdobeXD%5D%5D">https://www.adobe.com/products/xd.html][AdobeXD]]</a></li>
+<li>[[<a href="https://whimsical.com/%5D%5BWhimsical%5D%5D">https://whimsical.com/][Whimsical]]</a></li>
+<li>[[<a href="https://www.figma.com/%5D%5BFigma%5D%5D">https://www.figma.com/][Figma]]</a></li>
+<li><ul>
+<li>Computer Science</li>
+</ul>
+</li>
+<li>[[<a href="http://viso.to/2Tr8a3lvE%5D%5BCode">http://viso.to/2Tr8a3lvE][Code</a>: The Hidden Language of Computer Hardware and Software]]</li>
+<li>[[<a href="http://viso.to/5E510Tefq%5D%5BThe">http://viso.to/5E510Tefq][The</a> Elements of Computing Systems, aka &quot;Nand2Tetris&quot;]]</li>
+<li>[[<a href="https://cs50.harvard.edu/x%5D%5BHarvard&#39;s">https://cs50.harvard.edu/x][Harvard&#39;s</a> CS50x]]</li>
+<li><ul>
+<li>Programming</li>
+</ul>
+</li>
+<li>** Languages</li>
+<li>*** C/C++</li>
+<li>[[<a href="https://fluentcpp.com/%5D%5BFluent">https://fluentcpp.com/][Fluent</a> C++]]</li>
+<li>[[<a href="https://goalkicker.com/CPlusPlusBook/%5D%5BC++">https://goalkicker.com/CPlusPlusBook/][C++</a> Notes for Professionals]]</li>
+<li>The C++ Programming Language, aka &quot;The Mountains Book&quot;</li>
+<li>Cherno: C++ Series</li>
+<li>The Cherno YT</li>
+<li>Syntax Cheatsheet</li>
+<li>[[<a href="https://cppreference.com/%5D%5BCpp">https://cppreference.com/][Cpp</a> Reference]]</li>
+<li>[[<a href="https://cplusplus.com/%5D%5BC">https://cplusplus.com/][C</a> Plus Plus Reference]]</li>
+<li>[[<a href="https://learncpp.com/%5D%5BLearn">https://learncpp.com/][Learn</a> C++]]</li>
+<li>Configure VSCode for C++</li>
+</ul>
+<p>*** Web Development</p>
+<ul>
+<li>[[<a href="https://freecodecamp.org/%5D%5BfreeCodeCamp%5D%5D">https://freecodecamp.org/][freeCodeCamp]]</a></li>
+<li>Eloquent JavaScript</li>
+<li>HTML and CSS</li>
+<li>** Coding Practice</li>
+<li>[[<a href="https://rosettacode.org/%5D%5BRosetta">https://rosettacode.org/][Rosetta</a> Code]]</li>
+<li>[[<a href="https://projecteuler.net/%5D%5BProject">https://projecteuler.net/][Project</a> Euler]]</li>
+<li>[[<a href="https://hackerrank.com/%5D%5BHacker">https://hackerrank.com/][Hacker</a> Rank]]</li>
+<li>[[<a href="https://leetcode.com/%5D%5BLeet">https://leetcode.com/][Leet</a> Code]]</li>
+<li>[[<a href="https://hackthebox.com/%5D%5BHackTheBox%5D%5D">https://hackthebox.com/][HackTheBox]]</a></li>
+<li>Code Wars</li>
+<li><ul>
+<li>Developer Stuff</li>
+</ul>
+</li>
+<li>** Editors and IDEs</li>
+<li>*** VSCode</li>
+<li>Configure VSCode for C++</li>
+<li>*** Vim</li>
+<li>*** Emacs</li>
+<li>** Dev Tools</li>
+<li>*** Git</li>
+<li>[[<a href="https://git-scm.com/book/%5D%5BPro">https://git-scm.com/book/][Pro</a> Git]]</li>
+<li>Sacha Chua&#39;s Emacs Blog</li>
+<li>*** Unix Command Line</li>
+<li>Learn Enough Command Line To Be Dangerous</li>
+<li>** Hosting Platforms</li>
+<li>Heroku</li>
+<li>Digital Ocean</li>
+<li>Linode</li>
+<li>** Databases</li>
+<li>MongoDB</li>
+<li>MySQL</li>
+<li><ul>
+<li>UNORG</li>
+</ul>
+</li>
+<li>SnapDrop</li>
+<li>Pocket</li>
+<li>DevHints.io</li>
+<li>[[<a href="https://regexr.com/%5D%5BRegExr">https://regexr.com/][RegExr</a>: Interactive regular expression generator]]</li>
+<li>Wolfram|Alpha</li>
+</ul>
+<h1 id="unorg">Unorg</h1>
+<ul>
+<li><p>Intermediate C++ Programming</p>
+</li>
+<li><p>Scientific Computing with Python</p>
+</li>
+<li><p>Full-Stack Web Development</p>
+</li>
+<li><p>Game Development</p>
+</li>
+<li><p>Operating Systems</p>
+</li>
+<li><p>Databases</p>
+</li>
+<li><p>IT</p>
+</li>
+<li><p>The Internet</p>
+</li>
+<li><p>Computer Networking</p>
+</li>
+<li><p>Web Security</p>
+</li>
+<li><p>Front-End Web Development</p>
+</li>
+<li><p>Introduction to the Web</p>
+</li>
+<li><p>Introduction to HTML</p>
+</li>
+<li><p>Tags and Elements</p>
+</li>
+<li><p>Attributes</p>
+</li>
+<li><p>Boilerplate and Comments</p>
+</li>
+<li><p>Containers</p>
+</li>
+<li><p>Text</p>
+</li>
+<li><p>Images</p>
+</li>
+<li><p>Links</p>
+</li>
+<li><p>Structure</p>
+</li>
+<li><p>Introduction to CSS</p>
+</li>
+<li><p>Introduction to CSS</p>
+</li>
+<li><p>Color</p>
+</li>
+<li><p>Introduction to Flexbox</p>
+</li>
+<li><p>JavaScript For Programmers</p>
+</li>
+<li><p>ES6</p>
+</li>
+<li><p>ReactJS</p>
+</li>
+</ul>
+
+    </body>
+</html>

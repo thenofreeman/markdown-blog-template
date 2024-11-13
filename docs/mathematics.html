@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1, viewport-fit=cover">
+        <title>Mathematics</title>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <link href="assets/css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="mathematics">Mathematics</h1>
+<p>[[TOC]]</p>
+<h1 id="primary-mathematics">Primary Mathematics</h1>
+<p>Algebra
+Trigonometry
+Geometry</p>
+<p>Number Sets</p>
+<ul>
+<li>Real Numbers</li>
+<li>Rational Numbers</li>
+<li>Irrational Numbers</li>
+<li>Integers Numbers</li>
+<li>Whole Numbers</li>
+<li>Natrual Numbers</li>
+<li>Imaginary Numbers</li>
+<li>Complex Numbers</li>
+</ul>
+<p>Exercises</p>
+<p>Number</p>
+<p>Rational</p>
+<ul>
+<li>Addition</li>
+<li>Subtraction</li>
+<li>Mutliplication</li>
+<li>Division</li>
+<li>Negation</li>
+<li>Reduce</li>
+<li>Evaluate</li>
+</ul>
+<p>Integer</p>
+<p>Complex</p>
+<h1 id="differential-calculus">Differential Calculus</h1>
+<h1 id="integral-calculus">Integral Calculus</h1>
+<h1 id="multivariable-calculus">Multivariable Calculus</h1>
+<h1 id="linear-algebra">Linear Algebra</h1>
+<h2 id="vectors">Vectors</h2>
+<ul>
+<li>Properties of Vectors</li>
+<li>Vector Operations</li>
+</ul>
+<h3 id="tasks">Tasks</h3>
+<ul>
+<li>Vector Class Implementation</li>
+<li>Scalar Product</li>
+<li>Dot Product</li>
+<li>Magnitude</li>
+<li>Direction</li>
+</ul>
+<h4 id="vector-class-implementation">Vector Class Implementation</h4>
+<p>Implement a <code>Vector</code> class to handle [vector] object based on the following public class interface.</p>
+<pre><code class="c++">using <span class="hljs-built_in">Number</span> = double;
+using Radians = double;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Vector</span>
+</span>{
+public:
+    Vector(<span class="hljs-keyword">const</span> size_t&amp; n); <span class="hljs-comment">// zero initializes values</span>
+
+    <span class="hljs-built_in">Number</span>&amp; at(<span class="hljs-keyword">const</span> size_t&amp; index);
+    size_t getSize() <span class="hljs-keyword">const</span>;
+
+};</code></pre>
+<h4 id="vector-scalar-product">Vector Scalar Product</h4>
+<p>Given the implementation of a <code>Vector</code> object, compute the [scalar product] of of a [number] and a [vector].</p>
+<pre><code class="c++">Vector scalar_product(<span class="hljs-keyword">const</span> <span class="hljs-built_in">Number</span>&amp; c, <span class="hljs-keyword">const</span> Vector&amp; v);</code></pre>
+<h4 id="vector-dot-product">Vector Dot Product</h4>
+<p>Given the implementation of a <code>Vector</code> object, compute the [dot product] of two [vectors].</p>
+<pre><code class="c++"><span class="hljs-built_in">Number</span> dot_product(<span class="hljs-keyword">const</span> Vector&amp; u, <span class="hljs-keyword">const</span> Vector&amp; v);</code></pre>
+<h4 id="magnitude-of-a-vector">Magnitude of a Vector</h4>
+<p>Given the implementation of a <code>Vector</code> object, compute the [magnitude] (often called <em>length</em>) of a [vector].</p>
+<pre><code class="c++"><span class="hljs-built_in">Number</span> magnitude(<span class="hljs-keyword">const</span> Vector&amp; v);</code></pre>
+<h4 id="direction-of-a-vector">Direction of a Vector</h4>
+<p>Given the implementation of a <code>Vector</code> object, compute the [magnitude] of a [vector].</p>
+<pre><code class="c++">Radians direction(<span class="hljs-keyword">const</span> Vector&amp; v);</code></pre>
+<h2 id="matrices">Matrices</h2>
+<ul>
+<li>Properties of Matrices</li>
+<li>Matrix Operations</li>
+</ul>
+<h3 id="operations">Operations</h3>
+<p>Scalar Product
+Dot Product</p>
+<p>Inverse
+Transpose
+Determinant
+Trace</p>
+<h3 id="exercises">Exercises</h3>
+<p>Matrix</p>
+<ul>
+<li>Matrix Class Implementation</li>
+<li>Scalar Product</li>
+<li>Dot Product</li>
+<li>Trace</li>
+<li>2x2 Determinant</li>
+<li>mxn Determinant</li>
+</ul>
+<h4 id="matrix-class-implementation">Matrix Class Implementation</h4>
+<p>Implement a class <code>Matrix</code> to handle [matrix] objects based on the following public class interface.</p>
+<pre><code class="c++">using <span class="hljs-built_in">Number</span> = double;
+struct Order { size_t m, n };
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Matrix</span>
+</span>{
+public:
+    Matrix(<span class="hljs-keyword">const</span> size_t&amp; m, <span class="hljs-keyword">const</span> size_t&amp; n); <span class="hljs-comment">// zero initializes values</span>
+
+    <span class="hljs-built_in">Number</span>&amp; at(<span class="hljs-keyword">const</span> size_t&amp; i, <span class="hljs-keyword">const</span> size_t&amp; j);
+    Order getOrder() <span class="hljs-keyword">const</span>;
+
+};</code></pre>
+<p>Hint: You might choose to store your matrix&#39;s data as an array of [mathematical vector] objects, or by computing the row/column offset if storing the data in a single array.</p>
+<h4 id="matrix-scalar-product">Matrix Scalar Product</h4>
+<p>Given the implementation of a <code>Matrix</code>, compute the [scalar product] of a [number] and a [matrix].</p>
+<pre><code class="c++">Matrix scalar_product(<span class="hljs-keyword">const</span> <span class="hljs-built_in">Number</span>&amp; c, <span class="hljs-keyword">const</span> Matrix&amp; A);</code></pre>
+<h4 id="matrix-dot-product">Matrix Dot Product</h4>
+<p>Given the implementation of a <code>Matrix</code>, compute the [dot product] of two [matrices].</p>
+<pre><code class="c++">Matrix dot_product(<span class="hljs-keyword">const</span> Matrix&amp; A, <span class="hljs-keyword">const</span> Matrix&amp; B);</code></pre>
+<h4 id="trace-of-a-matrix">Trace of a Matrix</h4>
+<p>Given the implementation of a <code>Matrix</code>, compute its [trace].</p>
+<pre><code class="c++"><span class="hljs-built_in">Number</span> trace(<span class="hljs-keyword">const</span> Matrix&amp; A);</code></pre>
+<h4 id="determinant-of-a-2x2-matrix">Determinant of a 2x2 Matrix</h4>
+<p>Given the implementation of a <code>Matrix</code>, compute its [determinant], where the matrix, A, is restricted to an [order] of 2x2.</p>
+<pre><code class="c++"><span class="hljs-built_in">Number</span> determinant_2x2(<span class="hljs-keyword">const</span> Matrix&amp; A);</code></pre>
+<h4 id="determinant-of-a-mxn-matrix">Determinant of a mxn Matrix</h4>
+<p>Given the implementation of a <code>Matrix</code>, compute its [determinant].</p>
+<pre><code class="c++"><span class="hljs-built_in">Number</span> determinant(<span class="hljs-keyword">const</span> Matrix&amp; A);</code></pre>
+<h2 id="row-operations">Row Operations</h2>
+<h2 id="elimination">Elimination</h2>
+<p>Guass-Jordan</p>
+<h2 id="permutations">Permutations</h2>
+<p>What happens when elimination fails?</p>
+<h2 id="vector-spaces">Vector Spaces</h2>
+<p>To be a vector space:</p>
+<ul>
+<li>All linear combinations $cv + dw$ must stay in the vector space.</li>
+<li>The space must include the zero vector.</li>
+<li>$cv$ must be in the vector space, for any $c \in \R$</li>
+</ul>
+<p>The word &quot;space&quot; means all linear combinations (of vectors, matrices or functions) stay inside the space.</p>
+<h3 id="span-rank-basis-and-dimension">Span, Rank, Basis and Dimension</h3>
+<p>A basis is a set of vectors that perfectly describe a space.</p>
+<p>Every linear combination of vectors in a basis give different results.</p>
+<p>Dimension is the number elements within a basis -- the number of independent columns of a space.</p>
+<p>Full rank matrices have rank $r = m = n$</p>
+<h3 id="subspaces">Subspaces</h3>
+<p>A subspace of a vector space is a set of vectors that satisfy:</p>
+<ul>
+<li>$v + w$ is in the subspace.</li>
+<li>$cv$ is in the subspace.</li>
+<li>ie. it is closed under addition and multiplication.</li>
+</ul>
+<p>Every subspace includes the zero vector. Because $cv = 0$ when $c = 0$.</p>
+<p>Any space is a subspace of itself: eg. all of $\R^3$ is a subspace in $\R^3$.</p>
+<p>Examples of spaces in $\R^3$:</p>
+<ul>
+<li>$Z$, the single vector $(0, 0, 0)$</li>
+<li>$L$, any line through $(0, 0, 0)$</li>
+<li>$P$, any line through $(0, 0, 0)$</li>
+<li>$\R^3$, all of $\R^3$</li>
+</ul>
+<p>A plane in 3 dimensional space is not $\R^2$. It is a plane inside $\R^3$</p>
+<p>Examples of subspaces:</p>
+<ul>
+<li>$\bf{Z}$, the space containing only the zero vector.</li>
+<li>The line of functions $y = ce^x$, which contains all solutions to the D.E. $\frac{dy}{dx} = y$</li>
+</ul>
+<p>When we move into function space, linear differential equations replace linear algebraic equations.</p>
+<h3 id="4-fundamental-subspaces">4 Fundamental Subspaces</h3>
+<h4 id="column-space">Column Space</h4>
+<p>The column space, $C(A)$, is all linear combinations of the columns of $A$ -- all possible vectors $AX$.</p>
+<p>$Ax = b$ is solvable if and only if $b$ is in the column space of $A$.</p>
+<ul>
+<li>To solve $Ax = b$, we express $b$ as a combination of the columns of $A$ with $x$. </li>
+<li>If $b$ cannot be expressed in this way, $Ax = b$ has no solutions.</li>
+</ul>
+<p>The $r$ independent columns of $A$ are a basis for $C(A)$.</p>
+<h4 id="row-space">Row Space</h4>
+<p>The rows of $A$ are the columns of $A^T$.</p>
+<p>Therefore, the Row Space of $A$, $R(A)$ is the column space of $A^T$, $C(A^T)$. </p>
+<h4 id="null-space">Null Space</h4>
+<p>The Null Space of $A$, $N(A)$, is found by the solutions to $Ax = 0$.</p>
+<p>There are non-zero solution to $Ax = 0$ if $n &gt; m$</p>
+<p>The $n - r$ special solutions to $Ax = 0$ are a basis for $N(A)$.</p>
+<h4 id="left-null-space">Left-Null Space</h4>
+<p>The Left-Null Space is the null space of $A^T$. </p>
+<p>The Null Space of $A^T$ is found by the solutions to $yA^T = 0$.</p>
+<h1 id="factorization-and-decomposition">Factorization and Decomposition</h1>
+<p>CR
+QR
+LU
+LDU</p>
+<h2 id="eigenvalues-and-eigenvectors">Eigenvalues and Eigenvectors</h2>
+<ul>
+<li>Eigenvalues</li>
+<li>Eigenvectors</li>
+</ul>
+<h3 id="exercises-1">Exercises</h3>
+<ul>
+<li>Eigenvalues</li>
+<li>Eigenvector</li>
+</ul>
+<h4 id="eigenvalues-of-a-matrix">Eigenvalues of a Matrix</h4>
+<p>Given a [matrix], compute its [eigenvalues].</p>
+<pre><code class="c++">std::vector&lt;<span class="hljs-built_in">Number</span>&gt; eigenvalues(<span class="hljs-keyword">const</span> Matrix&amp; A);</code></pre>
+<h4 id="eigenvector-of-a-matrix">Eigenvector of a Matrix</h4>
+<p>Given a [matrix] and an [eigenvalue], compute its corresponding [eigenvector].</p>
+<pre><code class="c++">Vector eigenvector(<span class="hljs-keyword">const</span> Matrix&amp; A, <span class="hljs-keyword">const</span> <span class="hljs-built_in">Number</span>&amp; lambda);</code></pre>
+<h1 id="differential-equations">Differential Equations</h1>
+<h1 id="theoretical-calculus">Theoretical Calculus</h1>
+<h1 id="logic">Logic</h1>
+<h1 id="discrete-mathematics">Discrete Mathematics</h1>
+<h1 id="introduction-to-probability-and-statistics">Introduction to Probability and Statistics</h1>
+<h1 id="appendix">Appendix</h1>
+<h1 id="solutions">Solutions</h1>
+<h2 id="eigenvalues-and-eigenvectors-1">Eigenvalues and Eigenvectors</h2>
+<h3 id="eigenvalues-of-a-matrix-1">Eigenvalues of a Matrix</h3>
+<pre><code class="c++">std::vector&lt;<span class="hljs-built_in">Number</span>&gt; eigenvalues(<span class="hljs-keyword">const</span> Matrix&amp; A)
+{
+        Matrix I = identity_matrix(A.getOrder());
+        Variable lambda = <span class="hljs-string">'l'</span>;
+
+        Expression expression = determinant(A - lambda*I);
+
+        <span class="hljs-keyword">return</span> roots(expression, lambda);
+}</code></pre>
+<h3 id="eigenvalue-of-a-matrix">Eigenvalue of a Matrix</h3>
+<pre><code class="c++">Vector eigenvector(<span class="hljs-keyword">const</span> Matrix&amp; A, <span class="hljs-keyword">const</span> <span class="hljs-built_in">Number</span>&amp; lambda)
+{
+        Matrix I = identity_matrix(A.getOrder());
+
+        Matrix eigen_matrix = determinant(A - lambda*I);
+
+        <span class="hljs-keyword">return</span> nullspace(eigen_matrix);
+}</code></pre>
+<h1 id="unorg">Unorg</h1>
+
+    </body>
+</html>
